@@ -163,8 +163,6 @@ body.light-mode .mode-toggle{
 
 .skills span{
     display:inline-block;
-    background-color:#1a1a1a;
-    border:1px solid #ff1e1e;
     padding:8px 14px;
     font-size:14px;
     transition:0.3s;
@@ -197,9 +195,6 @@ body.light-mode .mode-toggle{
     position:relative;
     overflow:hidden;
 }
-.project-card h3{
-    list-style: none;
-}
 
 .project-card::before{
     content:"";
@@ -219,6 +214,15 @@ body.light-mode .mode-toggle{
 .project-card h3{
     margin-bottom:10px;
     color:#ff1e1e;
+}
+
+.red-link{
+    color:#ff4d4d;
+}
+
+.red-link:hover{
+    color:#ff4d4d;
+    text-shadow:0 0 10px #ff0000;
 }
 
 .footer{
