@@ -25,6 +25,7 @@ body.light-mode .mode-toggle{
     box-shadow:0 0 10px #c40000;
 }
 
+
 .navbar{
     position:fixed;
     top:0;
@@ -64,6 +65,13 @@ body.light-mode .mode-toggle{
     color:#ffe1e1;
     display:flex;
     gap:20px;
+}
+
+.logo img{
+    height:50px;
+    width:auto;
+    display:block;
+    filter:invert(100%);
 }
 
 .nav-links{
@@ -189,6 +197,9 @@ body.light-mode .mode-toggle{
     position:relative;
     overflow:hidden;
 }
+.project-card h3{
+    list-style: none;
+}
 
 .project-card::before{
     content:"";
@@ -197,7 +208,7 @@ body.light-mode .mode-toggle{
     left:-100%;
     width:1000%;
     height:100%;
-    background:linear-gradient(12000deg,transparent,rgba(246, 210, 111, 0.2),transparent);
+    background:linear-gradient(120000000deg,transparent,rgba(246, 210, 111, 0.2),transparent);
     transition:0.5s;
 }
 
