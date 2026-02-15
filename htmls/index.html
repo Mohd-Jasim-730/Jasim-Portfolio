@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="..\css\portfolio.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="../images/name.jpg">
+        </div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#gaming">Gaming</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+
+        <button id="modeToggle" class="mode-btn">
+            <span id="modeIcon">🌙</span>
+        </button>
+    </header>
+
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Mohamed Jasim A</h1>
+            <h2>Gaming  • IT • Development</h2>
+            <p>Code like a developer.Think like a gamer.</p>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2 class="section-title">ABOUT ME</h2>
+        <p class="section-text">I am an IT student with a strong passion for gaming, technology,and software development. I enjoy building websites, exploring game mechanics, and learning modern technologies.</p>
+    </section>
+
+    <section id="skills" class="section dark">
+        <h2 class="section-title red">SKILLS</h2>
+        <div class="skills">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>C</span>
+            <span>C#</span>
+            <span>C++</span>
+            <span>Git</span>
+            <span>Java</span>
+            <span>UI/UX</span>
+            <span>Video/Audio Editing</span>
+            <span>Python</span>
+            <span>GitHub</span>
+            <span>Flutter</span>
+            <span>Problem Solving</span>
+            <span>Game Design Basics (Unity Engine)</span>
+        </div>
+    </section>
+
+    <section id="gaming" class="section">
+        <h2 class="section-title">GAMING INTERESTS</h2>
+        <ul class="gaming-list">
+            <li>Souls-like Games</li>
+            <li>Open World RPGs</li>
+            <li>Game Mechanics Analysis</li>
+            <li>Story-driven Games</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="section dark">
+        <h2 class="section-title red">PROJECTS</h2>
+
+        <div class="projects">
+            <div class="project-card">
+                <h3>
+                    <a href="https://mohd-jasim-730.github.io/e-commerce/" class="red-link">E-Commerce Website</a>
+                </h3>
+                <p>HTML,CSS based shopping website with clean UI.</p>
+
+            </div>
+
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>Gaming-themed personal portfolio</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Mini IT Projects</h3>
+                <p>Emergency Fuel Delivery App</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="assignedTasks" class="section">
+        <h2 class="section-title">ASSIGNED TASKS</h2>
+
+        <p style="margin-bottom:15px;">
+            Tasks created in the Task Manager page will appear here automatically.
+        </p>
+
+        <ul id="portfolioTasks"></ul>
+
+        <div style="margin-top:20px;">
+            <a href="../htmls/todo.html" class="red-link">Open Task Manager</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 Mohamed Jasim A | Portfolio</p>
+    </footer>
+
+    <script src="..\scripts\script.js"></script>
+
+<audio id="dSSound" preload="auto">
+    <source src="../audios/click.mp3" type="audio/mpeg">
+</audio>
+
+</body>
+</html>

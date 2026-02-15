@@ -11,7 +11,16 @@ addBtn.addEventListener("click",() =>{
     const task={
         id:Date.now(),
         text:text,
-        time:new Date().toLocaleTimeString(),
+        date:new Date().toLocaleDateString('en-GB',{
+            day:'2-digit',
+            month:'short',
+            year:'numeric'
+        }),
+        time:new Date().toLocaleTimeString('en-US',{
+            hour:'2-digit',
+            minute:'2-digit',
+            hour12:true
+        }),
         completed:false
     };
 
@@ -34,15 +43,23 @@ function loadTasks(){
     tasks.forEach(task =>{
         const li=document.createElement("li");
 
-        li.innerHTML=`
-            <strong>${task.text}</strong>
-            <br><small>${task.time}</small>
-            <br>
-            <button onclick="toggleTask(${task.id})">
-                ${task.completed ? "Undo" : "Complete"}
-            </button>
-            <button onclick="deleteTask(${task.id})">Delete</button>
+        li.innerHTML = `
+            <div class="task-title">${task.text}</div>
+
+            <div class="task-actions">
+                <button onclick="toggleTask(${task.id})">
+                    ${task.completed ? "Undo" : "Complete"}
+                </button>
+            
+                <button onclick="deleteTask(${task.id})">Delete</button>
+            <div>
+
+            <div class="task-meta">
+                <div class="meta-left">📅 ${task.date}</div>
+                <div class="meta-right">🕒 ${task.time}</div>
+            </div>
         `;
+
 
         if(task.completed){
             li.style.textDecoration="line-through";
